@@ -30,18 +30,21 @@
   font-family: "Inter";
   font-weight: 600;
   font-size: 12px;
-  padding: 8px 20px;
+  padding: 8px 16px;
   color: #ffffff;
   background-color: #2dca73;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  margin-right: 10px;
 }
 @media screen and (min-width: 768px) {
   .add-btn {
     width: 100px;
     height: 35px;
+    padding: 8px 20px;
+    margin-right: 20px;
   }
 }
 .button-avatar-container {
@@ -51,10 +54,4 @@
 .profile-avatar {
   width: 40px;
   border-radius: 50%;
-}
-.profile-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin-left: 30px;
 }

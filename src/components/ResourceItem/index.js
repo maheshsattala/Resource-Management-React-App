@@ -4,8 +4,7 @@ import "./index.css";
 
 const ResourceItem = (props) => {
   const { resourceDetails } = props;
-  const { title, description, category, iconUrl, id, link, tag } =
-    resourceDetails;
+  const { title, description, category, iconUrl, link } = resourceDetails;
 
   return (
     <li className="resource-item-card">

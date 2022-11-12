@@ -56,7 +56,11 @@ class LoginForm extends Component {
         progress: undefined,
         theme: "colored",
       });
-    } else if (phoneNumber.length !== 10 || typeof phNo !== "number") {
+    } else if (
+      phoneNumber.length !== 10 ||
+      typeof phNo !== "number" ||
+      isNaN(phNo)
+    ) {
       this.setState({
         showSubmitError: true,
         errorMsg: "Invalid Phone Number",
@@ -94,7 +98,7 @@ class LoginForm extends Component {
           className="password-input-field"
           value={password}
           onChange={this.onChangePassword}
-          placeholder="Password"
+          placeholder="Enter Password"
         />
       </>
     );
@@ -114,7 +118,7 @@ class LoginForm extends Component {
           className="phone-number-input-field"
           value={phoneNumber}
           onChange={this.onChangePhoneNumber}
-          placeholder="Phone Number"
+          placeholder="Enter Phone Number"
         />
       </>
     );

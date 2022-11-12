@@ -18,7 +18,7 @@ const inputs = [
       "Item Name should be 3-16 characters with no special characters!",
     label: "ITEM NAME",
     required: true,
-    pattern: "^[A-Za-z0-9]{3,16}$",
+    pattern: "^[A-Za-z0-9S]*{3,16}$",
   },
   {
     id: 2,
@@ -159,7 +159,7 @@ export class AddResource extends Component {
 
   render() {
     const { values } = this.state;
-    console.log(values);
+    //  console.log(values);
 
     return (
       <>

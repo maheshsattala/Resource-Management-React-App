@@ -4,6 +4,9 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import React from "react";
 import "./index.css";
 
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+
 const Header = (props) => {
   const { isButton } = props;
 
@@ -31,17 +34,15 @@ const Header = (props) => {
                 </button>
               </Link>
             )}
-            <button
-              type="button"
-              className="profile-button"
-              onClick={onClickAvatar}
-            >
-              <img
-                className="profile-avatar"
-                src="https://res.cloudinary.com/dinhpbueh/image/upload/v1668151434/image_yl3z8p.png"
-                alt="profile avatar"
-              />
-            </button>
+            <Tooltip title="LOGOUT">
+              <IconButton onClick={onClickAvatar}>
+                <img
+                  className="profile-avatar"
+                  src="https://res.cloudinary.com/dinhpbueh/image/upload/v1668151434/image_yl3z8p.png"
+                  alt="profile avatar"
+                />
+              </IconButton>
+            </Tooltip>
           </div>
         </div>
       </div>

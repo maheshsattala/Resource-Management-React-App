@@ -14,8 +14,8 @@
   width: 100%;
   border-top: 1.5px solid #d7dfe9;
   border-bottom: 1.5px solid #d7dfe9;
-  border-right: 0.8px solid #d7dfe9;
-  border-left: 0.8px solid #d7dfe9;
+  border-right: 1px solid #d7dfe9;
+  border-left: 1px solid #d7dfe9;
 }
 .active-tab-btn {
   background-color: #0b69ff;

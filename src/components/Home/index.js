@@ -71,7 +71,7 @@ export class Home extends Component {
 
   renderTabItems = () => {
     const { activeTabId } = this.state;
-    console.log(activeTabId);
+    //  console.log(activeTabId);
     return (
       <ul className="tabs-container">
         {tabsList.map((tabDetails) => (
