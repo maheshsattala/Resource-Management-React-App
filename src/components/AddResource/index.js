@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import Header from "../Header";
 import { FiChevronLeft } from "react-icons/fi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "./index.css";
 import FormInput from "../FormInput";
@@ -11,7 +13,7 @@ const inputs = [
     id: 1,
     name: "itemName",
     type: "text",
-    placeholder: "Item Name",
+    placeholder: "Enter Item Name",
     errorMessage:
       "Item Name should be 3-16 characters with no special characters!",
     label: "ITEM NAME",
@@ -22,7 +24,7 @@ const inputs = [
     id: 2,
     name: "link",
     type: "text",
-    placeholder: "Link",
+    placeholder: "Enter Link",
     errorMessage: "It should be a valid link!",
     label: "LINK",
     pattern:
@@ -33,7 +35,7 @@ const inputs = [
     id: 3,
     name: "resourceName",
     type: "text",
-    placeholder: "Resource Name",
+    placeholder: "Enter Resource Name",
     errorMessage:
       "Resource Name should be 3-16 characters with no special characters and integers!",
     label: "RESOURCE NAME",
@@ -44,7 +46,7 @@ const inputs = [
     id: 4,
     name: "description",
     type: "text",
-    placeholder: "Description",
+    placeholder: "Enter Description",
     errorMessage: "Description shouldn't be Empty!",
     label: "DESCRIPTION",
   },
@@ -60,7 +62,7 @@ export class AddResource extends Component {
     },
   };
 
-  onSubmitForm = (event) => {
+  onSubmitForm = async (event) => {
     event.preventDefault();
     const data = new FormData(event.target);
     const formData = Object.fromEntries(data.entries());
@@ -71,7 +73,47 @@ export class AddResource extends Component {
       resourceName === "" ||
       description === ""
     ) {
-      alert("enter valid form data");
+      toast.error("Enter Valid Form Data", {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    } else {
+      const addResourceApiURL =
+        " https://media-content.ccbp.in/website/react-assignment/add_resource.json";
+      const options = {
+        method: "GET",
+      };
+
+      const response = await fetch(addResourceApiURL, options);
+      if (response.ok) {
+        toast.success("Resource Added Successfully", {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      } else {
+        toast.error("Resource Didn't Added", {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      }
     }
   };
 
@@ -123,6 +165,18 @@ export class AddResource extends Component {
       <>
         <Header isButton={false} />
         <div className="add-resource-container">
+          <ToastContainer
+            position="bottom-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+          />
           <div className="item-details-container">
             <div className="resources-button-container">
               <Link to="/" className="back-to_resources-link">
