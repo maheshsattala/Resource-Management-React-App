@@ -1,0 +1,46 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.input-label {
+  color: #7e858e;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Inter";
+  margin-bottom: 5px;
+}
+.input-field {
+  padding: 8px 16px;
+  outline: none;
+  border: 1px solid #d7dfe9;
+  background-color: #ffffff;
+  border-radius: 2px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: #171f46;
+  line-height: 24px;
+}
+.error-message {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  font-weight: 500;
+  display: none;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ .error-message {
+  display: block;
+}
+
+textarea:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+textarea:invalid[focused="true"] ~ .error-message {
+  display: block;
+}

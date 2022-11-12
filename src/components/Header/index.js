@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import React from "react";
 import "./index.css";
 
-function Header() {
+function Header(props) {
+  const { isButton } = props;
   return (
     <div className="nav-header">
       <div className="nav-content">
@@ -16,11 +17,13 @@ function Header() {
             />
           </Link>
           <div className="button-avatar-container">
-            <Link to="resource/add">
-              <button type="button" className="add-btn">
-                ADD ITEM
-              </button>
-            </Link>
+            {isButton && (
+              <Link to="/resource/add">
+                <button type="button" className="add-btn">
+                  ADD ITEM
+                </button>
+              </Link>
+            )}
             <img
               className="profile-avatar"
               src="https://res.cloudinary.com/dinhpbueh/image/upload/v1668151434/image_yl3z8p.png"

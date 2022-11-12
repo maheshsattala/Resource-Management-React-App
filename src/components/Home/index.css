@@ -1,1 +1,168 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tabs-container {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+  margin-bottom: 30px;
+}
+.search-input-container {
+  background-color: #ffffff;
+  border: 1px solid #d7dfe9;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  max-width: 700px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 576px) {
+  .search-input-container {
+    margin-right: 3%;
+  }
+}
+.search-input {
+  background-color: #ffffff;
+  color: #1e293b;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px 16px 8px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  align-self: stretch;
+  font-family: "Roboto";
+}
+@media screen and (min-width: 768px) {
+  .search-input {
+    font-size: 16px;
+  }
+}
+.search-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  display: flex;
+}
+.search-icon {
+  font-size: 18px;
+  color: #171f46;
+}
+@media screen and (min-width: 768px) {
+  .search-icon {
+    font-size: 20px;
+    color: #171f46;
+  }
+}
+.home-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.home-failure-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.home-failure-view-image {
+  width: 250px;
+  height: 120px;
+}
+@media screen and (min-width: 768px) {
+  .home-failure-view-image {
+    width: 400px;
+    height: 200px;
+  }
+}
+.home-failure-view-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #475569;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .home-failure-view-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.try-again-btn {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 8px 16px;
+  color: #f8fafc;
+  background-color: #2dca73;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .try-again-btn {
+    padding: 12px 24px;
+  }
+}
+
+.no-resources-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+.no-resources-view-image {
+  width: 250px;
+  height: 170px;
+}
+@media screen and (min-width: 768px) {
+  .no-resources-view-image {
+    height: 330px;
+    width: 470px;
+  }
+}
+
+.no-resources-view-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .no-resources-view-description {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #334155;
+  }
+}

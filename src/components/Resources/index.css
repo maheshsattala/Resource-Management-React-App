@@ -1,0 +1,39 @@
+.pagination {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 18px;
+  gap: 5px;
+}
+
+.pagination .page-num {
+  padding: 8px 15px;
+  cursor: pointer;
+  font-family: "Inter";
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.pagination .page-num:hover {
+  background-color: #2dca73;
+  color: #ffffff;
+  font-family: "Inter";
+}
+
+.pagination .active {
+  background-color: #2dca73;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Inter";
+}
+.resource-items-container {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  min-height: 50vh;
+}
