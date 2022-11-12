@@ -24,13 +24,13 @@
 .error-message {
   font-size: 12px;
   padding: 3px;
-  color: red;
+  color: #ff0b37;
   font-weight: 500;
   display: none;
 }
 
 input:invalid[focused="true"] {
-  border: 1px solid red;
+  border: 1px solid #ff0b37;
 }
 
 input:invalid[focused="true"] ~ .error-message {
@@ -38,7 +38,7 @@ input:invalid[focused="true"] ~ .error-message {
 }
 
 textarea:invalid[focused="true"] {
-  border: 1px solid red;
+  border: 1px solid #ff0b37;
 }
 
 textarea:invalid[focused="true"] ~ .error-message {

@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 import React from "react";
 import "./index.css";
 
-function Header(props) {
+const Header = (props) => {
   const { isButton } = props;
+
+  const onClickAvatar = () => {
+    const { history } = props;
+
+    history("/login");
+  };
   return (
     <div className="nav-header">
       <div className="nav-content">
@@ -24,16 +31,37 @@ function Header(props) {
                 </button>
               </Link>
             )}
-            <img
-              className="profile-avatar"
-              src="https://res.cloudinary.com/dinhpbueh/image/upload/v1668151434/image_yl3z8p.png"
-              alt="profile avatar"
-            />
+            <button
+              type="button"
+              className="profile-button"
+              onClick={onClickAvatar}
+            >
+              <img
+                className="profile-avatar"
+                src="https://res.cloudinary.com/dinhpbueh/image/upload/v1668151434/image_yl3z8p.png"
+                alt="profile avatar"
+              />
+            </button>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Header;
+const withRouter = (Component) => (props) => {
+  const history = useNavigate();
+  const location = useLocation();
+  const params = useParams();
+  return (
+    <Component
+      params={params}
+      history={history}
+      location={location}
+      {...props}
+      replace
+    />
+  );
+};
+
+export default withRouter(Header);

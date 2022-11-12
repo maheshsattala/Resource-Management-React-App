@@ -12,11 +12,14 @@ const FormInput = (props) => {
 
   return (
     <div className="input-container">
-      <label className="input-label">{label}</label>
+      <label className="input-label" htmlFor={`${label}`}>
+        {label}
+      </label>
       {label === "DESCRIPTION" ? (
         <textarea
           className="input-field"
           {...inputProps}
+          id={`${label}`}
           onChange={onChange}
           onBlur={onHandleFocus}
           focused={focused.toString()}
@@ -25,6 +28,7 @@ const FormInput = (props) => {
         <input
           className="input-field"
           {...inputProps}
+          id={`${label}`}
           onChange={onChange}
           onBlur={onHandleFocus}
           focused={focused.toString()}
