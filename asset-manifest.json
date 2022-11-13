@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Resource-Management-React-App/static/css/main.dff58aa7.css",
-    "main.js": "/Resource-Management-React-App/static/js/main.602997ae.js",
-    "static/js/787.f0644614.chunk.js": "/Resource-Management-React-App/static/js/787.f0644614.chunk.js",
-    "index.html": "/Resource-Management-React-App/index.html",
-    "main.dff58aa7.css.map": "/Resource-Management-React-App/static/css/main.dff58aa7.css.map",
-    "main.602997ae.js.map": "/Resource-Management-React-App/static/js/main.602997ae.js.map",
-    "787.f0644614.chunk.js.map": "/Resource-Management-React-App/static/js/787.f0644614.chunk.js.map"
+    "main.css": "/static/css/main.dff58aa7.css",
+    "main.js": "/static/js/main.2899b037.js",
+    "static/js/787.f0644614.chunk.js": "/static/js/787.f0644614.chunk.js",
+    "index.html": "/index.html",
+    "main.dff58aa7.css.map": "/static/css/main.dff58aa7.css.map",
+    "main.2899b037.js.map": "/static/js/main.2899b037.js.map",
+    "787.f0644614.chunk.js.map": "/static/js/787.f0644614.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dff58aa7.css",
-    "static/js/main.602997ae.js"
+    "static/js/main.2899b037.js"
   ]
 }
