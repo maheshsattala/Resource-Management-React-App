@@ -52,14 +52,16 @@ const inputs = [
   },
 ];
 
+const initialStateValues = {
+  itemName: "",
+  link: "",
+  resourceName: "",
+  description: "",
+};
+
 export class AddResource extends Component {
   state = {
-    values: {
-      itemName: "",
-      link: "",
-      resourceName: "",
-      description: "",
-    },
+    values: initialStateValues,
   };
 
   onSubmitForm = async (event) => {

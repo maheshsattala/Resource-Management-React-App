@@ -44,3 +44,6 @@ textarea:invalid[focused="true"] {
 textarea:invalid[focused="true"] ~ .error-message {
   display: block;
 }
+.link-input-field {
+  color: #0b69ff;
+}

@@ -10,6 +10,8 @@ const FormInput = (props) => {
     setFocused(true);
   };
 
+  const linkClassName = label === "LINK" ? "link-input-field" : "";
+
   return (
     <div className="input-container">
       <label className="input-label" htmlFor={`${label}`}>
@@ -26,7 +28,7 @@ const FormInput = (props) => {
         />
       ) : (
         <input
-          className="input-field"
+          className={`input-field ${linkClassName}`}
           {...inputProps}
           id={`${label}`}
           onChange={onChange}

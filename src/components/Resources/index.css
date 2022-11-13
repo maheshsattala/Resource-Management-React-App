@@ -18,13 +18,13 @@
 }
 
 .pagination .page-num:hover {
-  background-color: #0094e0;
+  background-color: #2dca73;
   color: #ffffff;
   font-family: "Inter";
 }
 
 .pagination .active {
-  background-color: #0094e0;
+  background-color: #2dca73;
   color: #ffffff;
   font-weight: 600;
   font-family: "Inter";
