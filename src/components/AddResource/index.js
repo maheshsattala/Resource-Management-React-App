@@ -14,11 +14,10 @@ const inputs = [
     name: "itemName",
     type: "text",
     placeholder: "Enter Item Name",
-    errorMessage:
-      "Item Name should be 3-16 characters with no special characters!",
+    errorMessage: "Item Name should be 3-20 characters!",
     label: "ITEM NAME",
+    pattern: "^[A-Za-z0-9 ]{3,20}$",
     required: true,
-    pattern: "^[A-Za-z0-9S]*{3,16}$",
   },
   {
     id: 2,
@@ -39,7 +38,7 @@ const inputs = [
     errorMessage:
       "Resource Name should be 3-16 characters with no special characters and integers!",
     label: "RESOURCE NAME",
-    pattern: "^[A-Za-z]{1,16}$",
+    pattern: "^[A-Za-z]{3,16}$",
     required: true,
   },
   {
