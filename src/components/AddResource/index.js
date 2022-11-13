@@ -117,39 +117,6 @@ export class AddResource extends Component {
     }
   };
 
-  /*
-  renderFormInput = (item) => {
-    const { placeholder } = item;
-    return (
-      <div className="input-container">
-        <label className="input-label">{placeholder.toUpperCase()}</label>
-        <input
-          className="input-field"
-          placeholder={`Enter ${placeholder}`}
-          type="text"
-        />
-      </div>
-    );
-  };
-    
-  renderFromTextArea = (item) => {
-    const { placeholder, name } = item;
-    return (
-      <div className="input-container">
-        <label className="input-label">{placeholder.toUpperCase()}</label>
-        <textarea
-          name={name}
-          className="input-field"
-          placeholder={`Enter ${placeholder}`}
-          type="text"
-          rows={2}
-          cols={40}
-        />
-      </div>
-    );
-  };
-  */
-
   onChange = (event) => {
     const { values } = this.state;
     this.setState({

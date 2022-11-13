@@ -10,6 +10,7 @@
   height: 200px;
   overflow: hidden;
   cursor: pointer;
+  transition: 0.5s all ease-in-out;
 }
 @media screen and (min-width: 576px) {
   .resource-item-card {
@@ -18,7 +19,9 @@
     margin-right: 3%;
   }
 }
-
+.resource-item-card:hover {
+  transform: scale(1.05);
+}
 @media screen and (min-width: 992px) {
   .resource-item-card {
     width: 31%;
