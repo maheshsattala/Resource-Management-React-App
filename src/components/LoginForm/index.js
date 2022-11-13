@@ -78,7 +78,7 @@ class LoginForm extends Component {
     } else {
       const { history } = this.props;
 
-      history("/");
+      history("/resource-management");
     }
   };
 

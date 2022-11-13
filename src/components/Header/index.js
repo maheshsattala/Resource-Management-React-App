@@ -19,7 +19,7 @@ const Header = (props) => {
     <div className="nav-header">
       <div className="nav-content">
         <div className="nav-bar-logo-container">
-          <Link to="/">
+          <Link to="/resource-management">
             <img
               className="website-logo"
               src="https://res.cloudinary.com/dinhpbueh/image/upload/v1668151414/NxtWave_TM_Coloured_logo_1_k705pa.png"

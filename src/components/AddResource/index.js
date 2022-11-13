@@ -147,7 +147,10 @@ export class AddResource extends Component {
           />
           <div className="item-details-container">
             <div className="resources-button-container">
-              <Link to="/" className="back-to_resources-link">
+              <Link
+                to="/resource-management"
+                className="back-to_resources-link"
+              >
                 <button className="back-arrow-btn" type="button">
                   <FiChevronLeft className="arrow-icon" />
                   Resources

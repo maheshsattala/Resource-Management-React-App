@@ -13,7 +13,7 @@ const NotFound = () => (
       we are sorry, the page you requested could not be found. Please go back to
       the homepage.
     </p>
-    <Link to="/" className="go-back-home-link">
+    <Link to="/resource-management" className="go-back-home-link">
       <button type="button" className="go-back-to-home-btn">
         Go Back to Home
       </button>

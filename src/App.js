@@ -11,7 +11,7 @@ function App() {
     <div className="app-container">
       <Routes>
         <Route exact path="/login" element={<LoginForm />} />
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/resource-management" element={<Home />} />
         <Route exact path="/resource/add" element={<AddResource />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
