@@ -86,7 +86,7 @@ export class AddResource extends Component {
       });
     } else {
       const addResourceApiURL =
-        " https://media-content.ccbp.in/website/react-assignment/add_resource.json";
+        "https://media-content.ccbp.in/website/react-assignment/add_resource.json";
       const options = {
         method: "GET",
       };
