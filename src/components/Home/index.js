@@ -9,8 +9,8 @@ import "./index.css";
 
 const tabsList = [
   { tabId: "resources", displayText: "Resources" },
-  { tabId: "user", displayText: "Users" },
   { tabId: "request", displayText: "Requests" },
+  { tabId: "user", displayText: "Users" },
 ];
 
 const apiStatusConstants = {
