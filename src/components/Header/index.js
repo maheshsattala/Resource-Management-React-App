@@ -12,7 +12,7 @@ const Header = (props) => {
 
   const onClickAvatar = () => {
     const { history } = props;
-
+    //  history.replace("/login");
     history("/login");
   };
   return (
